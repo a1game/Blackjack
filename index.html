@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <title>Blackjack</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link href="/Base.css" rel="stylesheet">
+</head>
+<script src="main.js"></script>
+<body class="titan-one-regular" >
+    <div class="TitleHolder"><div class="Title">Made By Sam</div></div>
+    <div class="game"> <div class="new">
+        <div class="text-box" id="value1">0</div>
+        <input type="number" id="bet1" placeholder="Bet amount" class="text-box" min="1">
+        <button class="button" style="vertical-align:middle" onclick="p1pull(true)" id="button1" disabled>
+            Get Card
+        </button>
+        <div class="text-box" id="money1">2500</div>
+        <button class="button" style="vertical-align:middle" onclick="p1HUN()" id="button3">
+            +100
+        </button>
+    </div>
+    <div class="new">
+        <div class="text-box" id="value2">0</div>
+        <input type="number" id="bet2" placeholder="Bet amount" class="text-box" min="1">
+        <button class="button" style="vertical-align:middle" onclick="p2pull(true)" id="button2" disabled>
+            Get Card
+        </button>
+        <div class="text-box" id="money2">2500</div>
+        <button class="button" style="vertical-align:middle" onclick="p2HUN()" id="button4">
+            +100
+        </button>
+    </div>
+    <div class="new">
+    <button type="button" class="button" onclick="startGame()" id="sta">Start</button>
+    <button type="button" class="button" onclick="endGame()" id="end">End</button>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+ background-color: darkslategray; 
+}
+
+.titan-one-regular {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .Title {
+    width: 45%;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 15px;
+    background-color: #313131;
+    color: white;
+  } 
+.TitleHolder {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    width: 100%;
+    text-align: center;
+    top: 1%;
+    align-content: center;
+    justify-content: center;
+        display: flex;
+  }
+
+  .button {
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #348f40;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin: 5px;
+      text-align: center;
+    text-decoration: none;
+    box-shadow: 0 9px rgb(58, 122, 83);
+        font-family: "Titan One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+  .button:active {
+    background-color: #afffa4;
+    box-shadow: 0 5px #375026;
+    transform: translateY(4px);
+  }
+.new {
+
+    text-align: center;
+    margin-top: 1%;
+}
+
+.card-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    pointer-events: none; /* Prevents the card from blocking clicks on elements below it */
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(100%); opacity: 0; }
+    50% { transform: translateY(-75%); opacity: 1; }
+    100% { transform: translateY(120%); opacity: 1; }
+
+}
+
+body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.text-box {
+  font-size: 1vw;
+  vertical-align: middle;
+display: inline-block;
+border-radius: 4px;
+background-color: #348f40;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+transition: all 0.2s;
+cursor: pointer;
+margin: 5px;
+  text-align: center;
+text-decoration: none;
+box-shadow: 0 9px rgb(58, 122, 83);
+    font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+  color: white;
+}
